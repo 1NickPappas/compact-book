@@ -1,0 +1,8 @@
+book/
+target
+*.md~
+.DS_Store
+.idea
+.vscode
+.nova
+.zed

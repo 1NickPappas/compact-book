@@ -1,0 +1,12 @@
+[book]
+title = "The Compact Programming Language"
+authors = []
+language = "en"
+src = "src"
+description = "A practical guide to writing smart contracts in Compact for the Midnight network."
+
+[output.html]
+git-repository-url = ""
+
+[output.html.search]
+use-boolean-and = true
