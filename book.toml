@@ -6,7 +6,7 @@ src = "src"
 description = "A practical guide to writing smart contracts in Compact for the Midnight network."
 
 [output.html]
-git-repository-url = ""
+git-repository-url = "https://github.com/1NickPappas/compact-book"
 
 [output.html.search]
 use-boolean-and = true
