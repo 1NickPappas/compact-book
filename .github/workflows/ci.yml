@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+env:
+  MDBOOK_VERSION: 0.5.4
+
+jobs:
+  build:
+    name: Build and spellcheck
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install mdBook
+        run: |
+          mkdir bin
+          curl -sSL "https://github.com/rust-lang/mdBook/releases/download/v${MDBOOK_VERSION}/mdbook-v${MDBOOK_VERSION}-x86_64-unknown-linux-gnu.tar.gz" | tar -xz --directory=bin
+          echo "$(pwd)/bin" >> "${GITHUB_PATH}"
+      - name: Report version
+        run: mdbook --version
+      - name: Build book
+        run: mdbook build
+      - name: Install cspell
+        run: npm install --no-save cspell
+      - name: Spellcheck
+        run: npx cspell .

@@ -1,0 +1,11 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "ignorePaths": ["book/", "node_modules/", ".git/"],
+  "words": [
+    "compact",
+    "midnight",
+    "mdbook",
+    "cspell"
+  ]
+}
