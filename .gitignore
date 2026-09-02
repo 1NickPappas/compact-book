@@ -1,6 +1,7 @@
 book/
 node_modules/
 target
+temp/
 *.md~
 .DS_Store
 .idea
