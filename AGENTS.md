@@ -5,6 +5,7 @@ Framework: [mdBook](https://rust-lang.github.io/mdBook/)
 - Build: `mdbook build` (HTML output in `book/`, git-ignored)
 - Develop: `mdbook serve` (live reload at http://localhost:3000)
 - Spellcheck: `npx cspell .` (CI: mdbook build + cspell)
+- Code check: `bash ci/check-compact.sh` (CI: compiles every block). Every ` ```compact ` block in a chapter must be a complete, standalone contract. Fragments and intentional error examples get the ` ```compact,ignore ` fence.
 
 Reference clones in `temp/` (git-ignored) — upstream repos for deep-diving the language.
 Always clone/update to the latest STABLE tag or branch.

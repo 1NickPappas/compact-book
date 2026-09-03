@@ -1,11 +1,12 @@
 {
   "version": "0.2",
   "language": "en",
-  "ignorePaths": ["book/", "temp/", "node_modules/", ".git/"],
+  "ignorePaths": ["book/", "temp/", "ci/", "node_modules/", ".git/"],
   "words": [
     "compact",
     "midnight",
     "midnightntwrk",
+    "devnet",
     "MDBook",
     "cspell",
     "compactc",

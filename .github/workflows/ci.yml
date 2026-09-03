@@ -27,3 +27,22 @@ jobs:
         run: npm install --no-save cspell
       - name: Spellcheck
         run: npx cspell .
+  code-check:
+    name: Compile book code blocks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Compact
+        run: |
+          curl --proto '=https' --tlsv1.2 -LsSf \
+            https://github.com/midnightntwrk/compact/releases/latest/download/compact-installer.sh | sh
+          export PATH="$HOME/.local/bin:$HOME/.compact/bin:$PATH"
+          compact --version
+      - name: Pin compiler
+        run: |
+          export PATH="$HOME/.local/bin:$HOME/.compact/bin:$PATH"
+          compact update 0.31.1
+      - name: Compile all Compact code blocks
+        run: |
+          export PATH="$HOME/.local/bin:$HOME/.compact/bin:$PATH"
+          bash ci/check-compact.sh
