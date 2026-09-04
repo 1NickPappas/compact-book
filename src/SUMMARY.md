@@ -14,10 +14,10 @@
   - [Building a Counter](ch02-01-building-counter.md) *(draft)*
 
 - [Understanding Privacy](ch03-00-privacy.md)
-  - [The Three Contexts](ch03-01-three-contexts.md) *(draft)*
-  - [Witnesses and Private State](ch03-02-witnesses.md) *(draft)*
-  - [The `disclose()` Requirement](ch03-03-disclose.md) *(draft)*
-  - [Commitments and Hashing](ch03-04-commitments.md) *(draft)*
+  - [The Three Contexts](ch03-01-three-contexts.md)
+  - [Witnesses and Private State](ch03-02-witnesses.md)
+  - [The `disclose()` Requirement](ch03-03-disclose.md)
+  - [Commitments and Hashing](ch03-04-commitments.md)
 
 - [Common Programming Concepts](ch04-00-common-programming-concepts.md)
   - [Pragmas and Contract Structure](ch04-01-structure.md)
