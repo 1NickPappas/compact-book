@@ -8,7 +8,7 @@
   - [Installation](ch01-01-installation.md)
   - [Your First Contract](ch01-02-first-contract.md)
 
-- [The Compact Toolchain](ch01-03-toolchain.md) *(draft)*
+- [The Compact Toolchain](ch01-03-toolchain.md)
 
 - [Programming a Counter Contract](ch02-00-counter.md)
   - [Building a Counter](ch02-01-building-counter.md) *(draft)*
